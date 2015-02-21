@@ -27,7 +27,6 @@ body {
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 20px;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -91,5 +90,9 @@ body {
 // }
 
 h4{
+  margin-top: 20px;
+}
+
+p:first-child{
   margin-top: 20px;
 }

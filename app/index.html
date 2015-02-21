@@ -60,7 +60,13 @@
         <div class="col-md-12">
           <h3>See the simulation</h3>
           <p>
-            Press Step 1 and Step 2, then repeat. What happened when you pressed Step 1 without Step 2?
+            Press Step 1 and Step 2, then repeat. You should see the chart below updated to show the data points in <code>myData</code> as bars.
+            In the visualization below, the left side is an example chart that will be updated with new data dynamically.
+            The diagram on the right side shows what actually happens in the background for this chart.
+          </p>
+          <p>
+             Next, see what happened when you pressed Step 1 (Bind data) one or more times without Step 2 (Update visual appearance)?
+             Is the chart updated?
           </p>
 
           <button class="btn btn-sm btn-default" onclick="bind(generateData(5));">
@@ -74,6 +80,14 @@
 
       <div class="demo">
         <svg width="700" height="200"></svg>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            <i>Bind data</i> only updates the bindings in the background, but does not update the chart until <i>Update visual appearance</i> is called. To understand why, let's see the actual code and explanation below.
+          </p>
+        </div>
       </div>
 
       <div class="row">
