@@ -139,8 +139,8 @@ console.log('\'Allo \'Allo!');
       .attr('cx', 50)
       .attr('r', 10)
       .style('fill-opacity', 0.2)
-      .style('fill', colors.enter)
-      .style('stroke', colors.enter)
+      .style('fill', color(1))
+      .style('stroke', color(1))
 
     g.append('text')
       .text(key)
@@ -253,7 +253,7 @@ console.log('\'Allo \'Allo!');
       sEnter.append('rect')
         .attr('y', function(d){return d.k * 15;})
         .attr('height', 14)
-        .style('fill', '#222')
+        .style('fill', color(1))
         .attr('width', 0);
       sEnter.append('text')
         .text(function(d){return d.k;})
