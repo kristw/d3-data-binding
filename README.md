@@ -1,4 +1,4 @@
-# d3-data-binding
+# D3's Data Binding
 
 An Interactive Explanation of D3's Data Binding
 
